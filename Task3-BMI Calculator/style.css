@@ -1,0 +1,55 @@
+.container
+{
+    width:90%;
+    max-width:450px!important;
+    border-radius:20px ; 
+    padding: 30px 40px;
+}
+
+/* Blue glowing effect */
+.glow {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); 
+}
+
+/* error */
+.error {
+    font-weight: bold;
+    color:red;
+}
+
+/* label and h1 text */
+.text
+{
+    font-weight: bold;
+    color: black;
+}
+
+/* all other text */
+.darkbluefont
+{
+color: darkblue!important;
+text-align: center;
+}
+/* make font bold and italic of matching status */
+.bold-italic {
+    font-weight: bold;
+    font-style: italic;
+    text-transform:uppercase;
+}
+
+
+/* responsive on mobile screen */
+/* Remove the maximum width*/
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: none; 
+    }
+    .chart
+    {
+        width:25%;
+        display: inline-block;
+        font-size: x-small;
+        text-align: center;
+    }
+}

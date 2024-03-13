@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-list</title>
+    <link rel="stylesheet" href="style.css"> 
+<!-- bootstrap css file -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+<!-- font awsome script -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body  onload="loadAllTodos()">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="form-group">
+            <h1>Todo List</h1>
+          
+                 <div class="d-flex">
+                        <input type="text" class="form-control" id="inp" placeholder="Add your work to do.......">
+                        <!-- function Add onclick -->
+                        <button onclick="addTodo()" class="btn add-btn float-end" type="button"><i class="fas fa-plus"></i></button> 
+            </div>
+            </div>
+            <!-- show msg if input field is empty -->
+             <p class="validator"></p>
+
+               <!-- added todo items will be displayed here -->
+               <div id="todo-list"></div>
+
+           <!-- delete all todo list -->
+           <!-- fs-2:font size &  fa-2x:icon size-->
+           <div class="text-center">
+            <button  onclick="removeAllTodos()" id="deleteAll" class="delete-all-btn p-2"><i class="fas fa-trash "></i> Delete All</button>
+        </div>
+        </div>
+    </div> 
+    
+    <!-- adding script -->
+    <script src="script.js"></script>
+    <!-- bootstrap js file -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

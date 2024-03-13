@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Skranji&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Skranji', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #593e84!important; /* Dark Purple Background */
+    color: #fff!important;
+    text-align: center!important;
+    padding: 20px;
+}
+.validator {
+    text-align: left;
+    color:red;
+}
+
+.container {
+    background-color: #a27fe0; /* Light Purple Container */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    border-radius: 5px !important;
+}
+ 
+.add-btn, .edit-btn, .trash-btn {
+    border-radius: 5px!important;
+    background-color: #7c4dcc !important; /* Dark Purple Button */
+    color: #fff !important;
+    border: none!important;
+    cursor: pointer!important;
+    width:50px;
+    height:50px;
+}
+
+.add-btn:hover, .delete-all-btn:hover, .edit-btn:hover, .trash-btn:hover {
+    background-color: #593e84 !important; /* Dark Purple Button Hover */
+}
+
+.editing {
+
+    width: 100%;
+    border-radius: 5px !important;
+    color: black !important;
+    border: none !important;
+    
+}
+.delete-all-btn
+{
+    border-radius: 5px !important;
+       background-color: #7c4dcc !important; /* Dark Purple Button */
+       color: #fff !important;
+       border: none !important;
+       cursor: pointer !important;
+       width:120px!important;
+       height:50px!important;
+   
+   }
